@@ -32,7 +32,7 @@ export class PrimeiroBlocoComponent implements OnInit {
   // gera o tempo de 40s por perguntas
   geraTempo() {
     this.listaDePerguntas.forEach(() => {
-      this.tempo = this.tempo + 10;
+      this.tempo = this.tempo + 40;
       return this.tempo;
     });
   }
