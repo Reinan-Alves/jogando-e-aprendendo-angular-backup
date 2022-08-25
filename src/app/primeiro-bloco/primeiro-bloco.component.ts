@@ -47,16 +47,15 @@ export class PrimeiroBlocoComponent implements OnInit {
       esteInput.style.backgroundColor = '#39ff14';
       esteInput.disabled = true;
       esteButton.disabled = true;
+    } else if (!suaResposta) {
+      esteInput.style.backgroundColor = 'white';
+      esteInput.disabled = false;
+      esteButton.disabled = false;
     } else {
       this.erros++;
       esteInput.style.backgroundColor = '#fc1723';
       esteInput.disabled = true;
       esteButton.disabled = true;
-    }
-    if (!suaResposta) {
-      esteInput.style.backgroundColor = 'white';
-      esteInput.disabled = false;
-      esteButton.disabled = false;
     }
     this.respondidas = this.acertos + this.erros;
     this.pontuacao = (this.acertos / this.respondidas) * 100 * this.acertos;

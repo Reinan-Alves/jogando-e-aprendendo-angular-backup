@@ -32,7 +32,7 @@
         </td>
         <td>
           <input #suaResposta id= "{{pergunta.id}}" type="number"/>
-          <button #enviar
+          <button type="button" #enviar
             (click)="conferirResposta(suaResposta.value, pergunta.resposta, suaResposta, enviar)"
           >
             ENVIAR
