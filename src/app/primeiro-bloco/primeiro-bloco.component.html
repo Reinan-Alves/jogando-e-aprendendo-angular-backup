@@ -1,0 +1,50 @@
+<div class="espaco">
+  <div class="central">
+    <p *ngIf="!bloquear">
+      [INICIAR] acessa a lista de perguntas, inicia cronômetro<br>
+      [PARAR] finaliza cronômetro, acessa sua pontuação
+    </p>
+    <h3 style="color: rgb(255, 255, 255)">
+      QUIZ ANGULAR
+    </h3>
+
+    <section class="controladores">
+
+      <button [disabled]="bloquear" (click)="iniciar()">INICIAR</button>
+      <button [disabled]="!bloquear"  (click)="parar()">PARAR</button>
+
+      {{tempo}} s
+     </section>
+    <table *ngIf="bloquear" class="tabela">
+      <thead>
+        <tr>
+          <th>Nº</th>
+          <th>Pergunta</th>
+          <th>Resposta</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let pergunta of listaDePerguntas">
+        <td>
+          {{ pergunta.id }}
+        </td>
+        <td>
+          <p>{{pergunta.texto}}</p>
+        </td>
+        <td>
+          <input #suaResposta id= "{{pergunta.id}}" type="number"/>
+          <button #enviar
+            (click)="conferirResposta(suaResposta.value, pergunta.resposta, suaResposta, enviar)"
+          >
+            ENVIAR
+          </button>
+        </td>
+      </tr>
+
+    </table>
+    <section *ngIf="!bloquear" class="controladores" >
+      <h5>Respondidas: {{respondidas}}</h5>
+     <h5>Acertos: {{acertos}}</h5>
+     <h5>Pontuação: {{pontuacao}}</h5>
+    </section>
+  </div>
+</div>

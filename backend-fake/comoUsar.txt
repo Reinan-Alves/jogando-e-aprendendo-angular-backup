@@ -1,0 +1,5 @@
+instalação na maquina
+npm install -g json-server
+
+execultando via comando
+json-server --watch db.json

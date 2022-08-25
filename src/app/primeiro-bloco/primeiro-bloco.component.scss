@@ -1,0 +1,98 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.espaco {
+  flex: 1;
+  text-align: center;
+  margin:auto;
+  align-items: center;
+}
+.central{
+
+position: relative;
+margin-left:auto;
+margin-right: auto;
+background-color: #1976d2;
+
+
+
+}
+.controladores{
+  width: 50%;
+  height:10%;
+  color:#ffffff;
+
+
+  margin:auto;
+
+  font-weight: bold;
+
+}
+
+table {
+  width: 100%;
+  margin-bottom : .5em;
+  text-align: center;
+  color:white;
+  margin:auto;
+  position: relative;
+
+}
+ th,td {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid white;
+  text-align: center;
+
+}
+th{
+  background-color: #1461ad;
+}
+
+
+p {
+  color: white;
+}
+
+input{
+  background-color: white;
+    &[type="text"]{
+        width: 90%;
+
+
+
+        font-size: 16px;
+
+
+      }
+    }
+
+    button{
+      width: 50%;
+      background-color: white;
+      border-radius: 30px;
+
+    }
+
+
+    .certo {
+
+      border: 5px solid;
+      border-color: white;
+      background-color: #39ff14;
+    }
+    .errado{
+      border: 5px solid white;
+      background-color: #fc1723;
+
+    }
+    .emBranco{
+      background-color: white;
+      border: 5px solid white;
+    }
+
+

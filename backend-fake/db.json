@@ -1,0 +1,34 @@
+{
+  "lista-de-perguntas": [
+    {
+      "id": 1,
+      "texto": "Comando usado para gerar um component: 1)  ng Novo componente. 2) npm generate component. 3) ng generate component. 4) npm new component.",
+      "resposta": "3",
+      "liberada": true
+    },
+    {
+      "id": 2,
+      "texto": "Abreviação usada para criar um component:  1) ng n c. 2) ng c c. 3) new g c. 4) ng g c.",
+      "resposta": "4",
+      "liberada": false
+    },
+    {
+      "id": 3,
+      "texto": "São blocos de aplicações contendo módulos,estrutura e estilizações: 1) Module. 2) Service. 3) Component. 4) Decorator.",
+      "resposta": "3",
+      "liberada": false
+    },
+    {
+      "id": 4,
+      "texto": "Nome do ciclo de vida carregado na inicialização de um componente: 1)ngoninit.   2) ngOnInit. 3) nginit. 4) ngInit",
+      "resposta": "2",
+      "liberada": false
+    },
+    {
+      "id": 5,
+      "texto": "Data binding que possibilita escultar eventos do template e possibilita executar um método no componente: 1) event binding. 2) Property binding. 3) bind data 4) binding data flows",
+      "resposta": "1",
+      "liberada": false
+    }
+  ]
+}
