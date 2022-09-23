@@ -1,7 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ListaDePerguntas } from '../module/lista-de-perguntas';
+import { ListaDePerguntas } from '../model/lista-de-perguntas';
 
 @Injectable({
   providedIn:'root',
@@ -14,7 +14,7 @@ export class PerguntasService {
   constructor(private http: HttpClient) {}
 
   public listaDePerguntas(): Observable<Array<ListaDePerguntas>> {
-return this.http.get<Array<ListaDePerguntas>>(`${this.url}lista-de-perguntas`)
+return this.http.get<Array<ListaDePerguntas>>(`${this.url}lista-de-desafios`)
 .pipe(
   (res) => res,
   (error) => error

@@ -1,4 +1,4 @@
-import { ListaDePerguntas } from './../module/lista-de-perguntas';
+import { ListaDePerguntas } from '../model/lista-de-perguntas';
 import { Component, OnInit } from '@angular/core';
 import { PerguntasService } from '../services/perguntas.service';
 
