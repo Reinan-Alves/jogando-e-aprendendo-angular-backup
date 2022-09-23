@@ -14,7 +14,7 @@ export class PerguntasService {
   constructor(private http: HttpClient) {}
 
   public listaDePerguntas(): Observable<Array<ListaDePerguntas>> {
-return this.http.get<Array<ListaDePerguntas>>(`${this.url}lista-de-desafios`)
+return this.http.get<Array<ListaDePerguntas>>(`${this.url}lista-de-perguntas`)
 .pipe(
   (res) => res,
   (error) => error
